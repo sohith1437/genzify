@@ -6,3 +6,4 @@ Flask
 flask-cors
 python-dotenv
 huggingface_hub
+gunicorn
