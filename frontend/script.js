@@ -17,7 +17,7 @@ convertBtn.addEventListener("click", async function () {
 
     try {
 
-        const response = await fetch("https://genzify-backend-r13p.onrender.com/api/convert", {
+        const response = await fetch("https://genzify-backend-1r3p.onrender.com/api/convert", {
 
             method: "POST",
 
