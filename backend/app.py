@@ -61,7 +61,12 @@ Original text:
                 }
             ],
             temperature=0.7,
-            max_tokens=200
+            max_tokens=200,
+            extra_body={
+                "chat_template_kwargs": {
+                    "enable_thinking": False
+                }
+            }
         )
 
         result = response.choices[0].message.content
