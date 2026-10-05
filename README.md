@@ -61,60 +61,6 @@ genzify/
 4. The converted response is returned to the frontend.
 5. If the remote conversion service is unavailable, GenZify uses its built-in fallback conversion logic.
 
-## Local Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/sohith1437/genzify.git
-cd genzify
-```
-
-### 2. Set up the backend
-
-```bash
-cd backend
-python -m venv venv
-```
-
-Activate the virtual environment on Windows:
-
-```bash
-venv\\Scripts\\activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Configure the NVIDIA API key
-
-Create a `.env` file inside the `backend` directory:
-
-```env
-NVIDIA_API_KEY=your_api_key_here
-```
-
-Never commit your API key to GitHub.
-
-### 4. Run the backend
-
-```bash
-python app.py
-```
-
-The Flask server runs on:
-
-```
-http://localhost:5000
-```
-
-### 5. Run the frontend
-
-Open `frontend/index.html` in a browser, or serve the frontend with a local HTTP server.
-
 ## Deployment
 
 The frontend is configured for Netlify using `netlify.toml`.
